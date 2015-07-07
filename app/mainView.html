@@ -3,7 +3,7 @@
         <div class="news-post"
              style="background-image: url({{newsPost.enclosure.url}})"
                 ng-click="vm.toggleDescription(newsPost)">
-            <div class="news-title">{{newsPost.title}}</div>
+            <h2 class="news-title">{{newsPost.title}}</h2>
             <div class="news-description" ng-show="newsPost.showDescription">
                 {{newsPost.description}}
                 <a href="{{newsPost.link}}" target="_blank">More...</a>

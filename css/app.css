@@ -9,6 +9,10 @@ h1 {
     text-transform: uppercase;
 }
 
+h2{
+    margin: 0;
+}
+
 a {
     color: #CCFFFF;
 }
