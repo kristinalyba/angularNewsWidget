@@ -1,0 +1,13 @@
+<div class="col-lg-12">
+    <div ng-repeat="newsPost in vm.newsPosts">
+        <div class="news-post"
+             style="background-image: url({{newsPost.enclosure.url}})"
+                ng-click="vm.toggleDescription(newsPost)">
+            <div class="news-title">{{newsPost.title}}</div>
+            <div class="news-description" ng-show="newsPost.showDescription">
+                {{newsPost.description}}
+                <a href="{{newsPost.link}}" target="_blank">More...</a>
+            </div>
+        </div>
+    </div>
+</div>

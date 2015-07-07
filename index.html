@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yahoo news</title>
+
+    <!-- Style sheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Library scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/mainCtrl.js"></script>
+
+    <!-- Services -->
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/newsService.js"></script>
+
+</head>
+<body ng-app="newsWidget">
+<div class="container">
+    <header class="jumbotron">
+        <h1>Meet the latest news from Yahoo!</h1>
+    </header>
+</div>
+<div class="container">
+    <div ui-view></div>
+</div>
+</body>
+</html>
